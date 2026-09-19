@@ -114,7 +114,7 @@ This project is released under the `MIT License`. Feel free to use it for both c
 
 ## Version Info
 
-- **Version**: v1.1.1
+- **Version**: v1.1.2
 - **Author**: nyorotan
 
 _Enjoy your music, Enjoy your desktop!_

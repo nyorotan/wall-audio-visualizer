@@ -7,8 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.1.1] - 2026-09-14
+## [1.1.2] - 2026-09-19
+
 ### Fixed
+
+- Improved operational stability.
+
+## [1.1.1] - 2026-09-14
+
+### Fixed
+
 - Fixed a bug where the app wouldn't close.
 
 ## [1.1.0] - 2026-09-11

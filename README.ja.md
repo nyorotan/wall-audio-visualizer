@@ -114,7 +114,7 @@ Homeキーを押しながら、各キーを押してください。
 
 ## バージョン情報
 
-- **バージョン**: v1.1.1
+- **バージョン**: v1.1.2
 - **作者**: nyorotan
 
 _Enjoy your music, Enjoy your desktop!_
