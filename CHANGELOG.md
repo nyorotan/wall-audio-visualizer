@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-09-28
+
+### Added
+
+- Add Vertical taskbar Mode.
+- Add new VisualizerStyle.
+
 ## [1.1.2] - 2026-09-19
 
 ### Fixed

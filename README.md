@@ -2,7 +2,7 @@
 
 # 🎨 Wallpaper Audio Visualizer
 
-![ ](./doc/d.jpg)  
+![ ](./doc/a.jpg)  
 **"Illuminate your desktop wallpaper with the music playing on your PC."**
 
 Wallpaper Audio Visualizer is an application that brings dynamic, beautiful animations to life on your desktop wallpaper, synchronized in real-time with the music playing on your PC.
@@ -45,16 +45,25 @@ Press and hold the **Home** key while pressing the target key:
 - **[Home] + [S]**: Toggle between Desktop Mode and Taskbar Mode.
   - In Taskbar Mode, it automatically switches to the classic style and embeds compactly (500px width).
   - Pressing it again automatically restores your previous monitor and style.
-- **[Home] + [0] ~ [9]**: Instantly switch visual styles (some styles are disabled in Taskbar Mode).
+- **[Home] + [0] ~ [9]**: Instantly switch the normal vertical styles (some styles are disabled in Taskbar Mode).
+- **[Home] + [Q/W/E/T/Y/U]**: Switch the horizontal styles that fit the taskbar direction.
+  - Q: Horizontal Classic
+  - W: Horizontal Symmetric
+  - E: Horizontal Top-Down
+  - T: Horizontal Rainbow
+  - Y: Horizontal Symmetric Rainbow
+  - U: Horizontal Top-Down Rainbow
 - **[Home] + [ESC]**: Instantly exit the app.
 
 *Note: While the app is running, it hooks the Home key to prevent conflicts with other apps. As a result, the standard Home key behavior (such as moving the cursor to the beginning of a line) will be disabled.*
 
-## 🎨 Visual Styles (10 Styles)
+## 🎨 Visual Styles (16 Styles)
 
 Choose from a variety of styles to match your mood.
 
-![ ](./doc/a.jpg)
+![ ](./doc/c.jpg)
+
+### Standard styles (vertical direction)
 
 1. **Classic**: A timeless style where bars extend upward from the bottom like piano keys to the beat of the music.
 2. **Symmetrical**: A balanced, beautiful style expanding mirrored upward and downward from the screen center.
@@ -67,23 +76,63 @@ Choose from a variety of styles to match your mood.
 9. **Tachometer**: A mechanical style where a speedometer-like needle swings rhythmically to the bass beat.
 10. **Spirograph**: A mesmerizing style where complex geometric lines overlap and mutate endlessly, like a kaleidoscope or spirograph ruler artwork.
 
-## 🎉 New Feature: Taskbar Mode
+### Horizontal styles (left-to-right layout)
+
+11. **Horizontal Classic**: A classic left-to-right bar style that fits wide layouts. It was designed to work well in Taskbar Mode, but it can also be used normally in Desktop Mode.
+12. **Horizontal Symmetric**: A balanced left/right expansion that keeps the visualizer centered and clean in wide spaces. It looks especially good on the taskbar, but it also works nicely on the desktop.
+13. **Horizontal Top-Down**: A directional flow that moves from right to left, designed for wide layouts. It is comfortable in Taskbar Mode and still feels natural on the desktop.
+14. **Horizontal Rainbow**: A bright left-to-right rainbow bar effect for wide displays. It was tuned for the taskbar, but it remains a great choice in Desktop Mode as well.
+15. **Horizontal Symmetric Rainbow**: A mirrored rainbow effect that spreads cleanly across a horizontal display. This style is especially suitable for Taskbar Mode, but it is not limited to it.
+16. **Horizontal Top-Down Rainbow**: A colorful flowing style with rainbow motion and a strong horizontal feel. It stands out in the taskbar, and it also delivers a vivid look on the normal desktop.
+
+> Note: These horizontal styles are not limited to Taskbar Mode. They are prepared for the taskbar as a natural fit, but you can also use them normally in Desktop Mode. When the taskbar direction changes, the app simply chooses the layout that matches the current environment, while still allowing the style to be used in normal desktop display as well.
+
+## 🎉 New Feature: Taskbar Mode Ver. 2 (Supports vertical orientation)
 
 Embeds a compact visualizer directly inside your taskbar.
 
-![ ](./doc/c.jpg)
+![ ](./doc/d.jpg)
 
-- *Note: Taskbar Mode is not supported when the taskbar is positioned vertically (left or right side of the screen).*
 - ***Behavior Differences by Windows Version***:
   - **Windows 10**: The taskbar region (ReBarWindow32) is automatically adjusted so the visualizer fits cleanly without overlapping app icons.
   - **Windows 11**: Due to Windows 11 taskbar specifications, **the visualizer display may overlap with app icons on the taskbar** depending on your layout. Please keep this in mind.
 
-> *Note: In Taskbar Mode, only landscape-oriented styles (1–3, 5–7) are supported to maintain clear visibility within the limited height. Radial, Tachometer, and Spirograph styles (4, 8, 9, 10) are disabled.*
+> *Note: * In taskbar mode, only styles suitable for horizontal or vertical layouts (1–3, 5–7, or 11–16) are available to ensure clear visibility within the limited height; radial, tachometer, and spirograph styles (4, 8, 9, 10) are disabled.*
+
+### The usable styles change automatically depending on the taskbar direction
+
+![ ](./doc/e.jpg)
+
+When the app is used in Taskbar Mode, it automatically adapts to the taskbar layout.
+
+- When the taskbar is at the top or bottom: The standard style is available; the vertical style cannot be selected.
+- When the taskbar is on the left or right: The vertical style is available; the standard style cannot be selected.
+
+As a result, styles that cannot be used are grayed out in the menu, and their keyboard shortcuts are disabled.
+For instance, the application automatically restricts usage so that only "landscape" or "portrait" styles are enabled.
+
+> This is a simple safety rule: the app only allows styles that match the taskbar direction, so the display stays clean and stable.
+
+### Even if it overlaps with pinned app icons on the taskbar, normal clicks still work（Windows11）
+
+![ ](./doc/f.jpg)
+
+The visualizer is drawn behind the desktop layer, so even if it overlaps with taskbar icons, **normal clicks still pass through to the underlying app as usual**.
+
+This is especially helpful on a vertical taskbar, where space is limited and pinned app icons can sit close together. Even in that case, **the visualizer can overlap visually without stealing mouse input from the icon or app behind it**.
+
+- You can still click app icons normally.
+- You can still drag files and use your desktop as usual.
+- When the space is tight, the effect stays visible without blocking normal interaction.
+
+> In short, overlapping visuals do not mean the taskbar stops working normally.
 
 ## 💡 Frequently Asked Questions
 
 - **Q. Will this prevent me from clicking my desktop icons?**  
   A. **Rest assured, there is zero impact.** The app is designed to sit behind desktop icons as part of the wallpaper layer, so mouse inputs are never captured by the visualizer. You can interact with desktop icons and organize files as usual.
+- **Q. Even if it overlaps with taskbar icons, can I still click them?**  
+  A. Yes — **you can click them normally.** The visualizer is rendered behind the desktop layer, so even when it looks like it overlaps with a taskbar icon, the mouse input still reaches the underlying app. This is especially useful on a vertical taskbar, where space is limited and icons can get close together.
 - **Q. Will it slow down my PC?**  
   A. It is designed to be lightweight. If you experience slowdowns, try closing unnecessary background applications.
 - **Q. Does it respond to microphone input?**  
@@ -102,7 +151,7 @@ This app does not modify any system configurations or registry entries. To unins
 - The desktop may flicker briefly upon startup; this is expected behavior while inserting the layer behind the wallpaper icons.
 - **Taskbar Mode (Windows 11)**: On Windows 11, the visualizer may overlap with pinned/running app icons due to OS taskbar limitations.
 - Since this app manipulates the desktop render layer, avoid using it simultaneously with other live wallpaper software.
-  > *Note: Compatibility with the author's separate project `Decorate the screen (-decoscreen-)` is supported.*
+  > *Note: Compatibility with the author's separate project [`Decorate the screen (- Dekosuku -)`](https://github.com/nyorotan/Dekosuku) is supported.*
 
 ---
 
@@ -114,7 +163,7 @@ This project is released under the `MIT License`. Feel free to use it for both c
 
 ## Version Info
 
-- **Version**: v1.1.2
+- **Version**: v1.2.0
 - **Author**: nyorotan
 
 _Enjoy your music, Enjoy your desktop!_
