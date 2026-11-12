@@ -15,8 +15,8 @@ Wallpaper Audio Visualizer is an application that brings dynamic, beautiful anim
   Animations run right behind your desktop icons. **You can double-click desktop icons or drag & drop files just as you normally would without the app interfering.**
 - **Space-Saving "Taskbar Mode"**  
   In addition to full desktop display, you can embed a compact visualizer (500px width) directly into your taskbar.
-- **10 Diverse Visual Styles**  
-  Choose from classic frequency bars, rainbow-glowing geometric patterns, tachometer/speedometer styles, and more depending on your mood.
+- **18 Diverse Visual Styles**
+  Choose from classic frequency bars, rainbow-glowing geometric patterns, tachometer/speedometer styles, or a 3D wireframe dancer whose animation speed responds to the music.
 - **Multi-Monitor Support**  
   Select any specific monitor to display the visualizer when using multiple displays.
 
@@ -53,11 +53,13 @@ Press and hold the **Home** key while pressing the target key:
   - T: Horizontal Rainbow
   - Y: Horizontal Symmetric Rainbow
   - U: Horizontal Top-Down Rainbow
+- **[Home] + [V]**: Switching to  the "Muscle Exercises." The animation speed changes based on the volume (desktop mode only).
+- **[Home] + [B]**: Switches to the "Cutie Dance." The animation speed changes based on the volume (desktop mode only).
 - **[Home] + [ESC]**: Instantly exit the app.
 
 *Note: While the app is running, it hooks the Home key to prevent conflicts with other apps. As a result, the standard Home key behavior (such as moving the cursor to the beginning of a line) will be disabled.*
 
-## 🎨 Visual Styles (16 Styles)
+## 🎨 Visual Styles (18 Styles)
 
 Choose from a variety of styles to match your mood.
 
@@ -84,8 +86,10 @@ Choose from a variety of styles to match your mood.
 14. **Horizontal Rainbow**: A bright left-to-right rainbow bar effect for wide displays. It was tuned for the taskbar, but it remains a great choice in Desktop Mode as well.
 15. **Horizontal Symmetric Rainbow**: A mirrored rainbow effect that spreads cleanly across a horizontal display. This style is especially suitable for Taskbar Mode, but it is not limited to it.
 16. **Horizontal Top-Down Rainbow**: A colorful flowing style with rainbow motion and a strong horizontal feel. It stands out in the taskbar, and it also delivers a vivid look on the normal desktop.
+17. **3D Muscle Exercises**: Displays an animated model in wireframe. The playback speed adjusts smoothly based on the intensity of the audio, and the animation pauses during periods of silence.
+18. **3D Cutie Dance**: Displays an animated model in wireframe. The playback speed adjusts smoothly based on the intensity of the audio, and the animation pauses during periods of silence.
 
-> Note: These horizontal styles are not limited to Taskbar Mode. They are prepared for the taskbar as a natural fit, but you can also use them normally in Desktop Mode. When the taskbar direction changes, the app simply chooses the layout that matches the current environment, while still allowing the style to be used in normal desktop display as well.
+> Note: The horizontal layouts (styles 11–16) are not limited to Taskbar Mode. They are prepared for the taskbar as a natural fit, but you can also use them normally in Desktop Mode. When the taskbar direction changes, the app simply chooses the layout that matches the current environment, while still allowing the style to be used in normal desktop display as well.
 
 ## 🎉 New Feature: Taskbar Mode Ver. 2 (Supports vertical orientation)
 
@@ -97,7 +101,7 @@ Embeds a compact visualizer directly inside your taskbar.
   - **Windows 10**: The taskbar region (ReBarWindow32) is automatically adjusted so the visualizer fits cleanly without overlapping app icons.
   - **Windows 11**: Due to Windows 11 taskbar specifications, **the visualizer display may overlap with app icons on the taskbar** depending on your layout. Please keep this in mind.
 
-> *Note: * In taskbar mode, only styles suitable for horizontal or vertical layouts (1–3, 5–7, or 11–16) are available to ensure clear visibility within the limited height; radial, tachometer, and spirograph styles (4, 8, 9, 10) are disabled.*
+> *Note: * In taskbar mode, only styles suitable for horizontal or vertical layouts (1–3, 5–7, or 11–16) are available to ensure clear visibility within the limited height; radial, tachometer, spirograph (4, 8, 9, 10), and 3D dance (17, 18) are disabled.*
 
 ### The usable styles change automatically depending on the taskbar direction
 
@@ -154,6 +158,17 @@ This app does not modify any system configurations or registry entries. To unins
   > *Note: Compatibility with the author's separate project [`Decorate the screen (- Dekosuku -)`](https://github.com/nyorotan/Dekosuku) is supported.*
 
 ---
+## About the 3D Models
+
+The following 3D models and motion data were used. Thank you to the creators:
+- Pronama-chan 3D Model "Ver. 4.3"  
+    - kei.pronama.jp
+- Male Man 4
+    - -- (Creator)
+- Bodybuilding Motion & Poses 1.1  
+    - Yasuo Yamabe
+- WAVEFILE (short ver.) – Motion released to commemorate the Pronama-chan distribution  
+    - hino
 
 ## License
 
@@ -163,7 +178,7 @@ This project is released under the `MIT License`. Feel free to use it for both c
 
 ## Version Info
 
-- **Version**: v1.2.0
+- **Version**: v1.3.0
 - **Author**: nyorotan
 
 _Enjoy your music, Enjoy your desktop!_
